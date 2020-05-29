@@ -7,17 +7,14 @@ public class User {
 
     public User() {}
 
-    public String getUserId() {
-        return userId;
+    public User(String userId, String name, Integer age) {
+        this.userId = userId;
+        this.name = name;
+        this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "User{" +
-                "userId='" + userId + '\'' +
-                ", name='" + name + '\'' +
-                ", age=" + age +
-                '}';
+    public String getUserId() {
+        return userId;
     }
 
     public void setUserId(String userId) {
@@ -40,9 +37,12 @@ public class User {
         this.age = age;
     }
 
-    public User(String userId, String name, Integer age) {
-        this.userId = userId;
-        this.name = name;
-        this.age = age;
+    @Override
+    public String toString() {
+        return "User{" +
+                "userId='" + userId + '\'' +
+                ", name='" + name + '\'' +
+                ", age=" + age +
+                '}';
     }
 }

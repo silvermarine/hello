@@ -3,7 +3,7 @@ package kr.re.kitri.hello.service.impl;
 import kr.re.kitri.hello.model.Product;
 import kr.re.kitri.hello.service.ProductService;
 
-public class VirturlProductServiceImpl implements ProductService {
+public class VirtualProductServiceImpl implements ProductService {
     @Override
     public String retrieveProducts() {
         return null;
